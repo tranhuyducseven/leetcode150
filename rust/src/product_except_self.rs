@@ -11,6 +11,7 @@ impl Solution {
         let mut next = 1;
 
         for i in 0..length {
+            println!("i: {}", i);
             records[i].0 = prev;
             records[length - i - 1].1 = next;
             prev *= nums[i];
